@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerenciador de Chats</title>
+    <link rel="stylesheet" href="popup.css"> 
+</head>
+<body>
+    <div class="container">
+        <h1>Gerenciador de Chats</h1>
+        
+        <form id="addChatForm">
+            <label for="chatName">Nome do Chat:</label>
+            <input type="text" id="chatName" required placeholder="Digite o nome">
+            <label for="chatUrl">URL do Chat:</label>
+            <input type="url" id="chatUrl" required placeholder="Digite a URL">
+            <button type="submit">Salvar</button>
+        </form>
+
+        <h2>Meus Chats</h2>
+        <ul id="chatList"></ul>
+    </div>
+
+    <script src="popup.js"></script>
+</body>
+</html>
